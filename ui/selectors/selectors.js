@@ -1558,8 +1558,15 @@ export function getIsOpbnb(state) {
   );
 }
 
+export function getIsHypr(state) {
+  return (
+    getCurrentChainId(state) === CHAIN_IDS.HYPR ||
+    getCurrentChainId(state) === CHAIN_IDS.HYPR_TESTNET
+  )
+}
+
 export function getIsOpStack(state) {
-  return getIsOptimism(state) || getIsBase(state) || getIsOpbnb(state);
+  return getIsOptimism(state) || getIsBase(state) || getIsOpbnb(state) || getIsHypr(state);
 }
 
 export function getIsMultiLayerFeeNetwork(state) {

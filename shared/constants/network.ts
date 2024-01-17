@@ -143,6 +143,8 @@ export const CHAIN_IDS = {
   MOONRIVER: '0x505',
   CRONOS: '0x19',
   GNOSIS: '0x64',
+  HYPR:'0x371',
+  HYPR_TESTNET: '0x372',
   ZKSYNC_ERA: '0x144',
   TEST_ETH: '0x539',
 } as const;
@@ -750,6 +752,8 @@ export const BUYABLE_CHAINS_MAP: {
     | typeof CHAIN_IDS.BASE
     | typeof CHAIN_IDS.OPBNB_TESTNET
     | typeof CHAIN_IDS.OPBNB
+    | typeof CHAIN_IDS.HYPR
+    | typeof CHAIN_IDS.HYPR_TESTNET
     | typeof CHAIN_IDS.BSC_TESTNET
     | typeof CHAIN_IDS.POLYGON_TESTNET
     | typeof CHAIN_IDS.AVALANCHE_TESTNET
